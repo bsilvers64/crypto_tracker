@@ -1,0 +1,30 @@
+{
+  "name": "crypto-tracker",
+  "version": "1.0.0",
+  "description": "track your bitcoin price",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "keywords": [],
+  "author": "Bhavansh Sthapak",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^11.2.1",
+    "electron-builder": "^22.9.1"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
+  "build": {
+    "appId": "com.Bscrypto.app",
+    "productName": "₿TC tracker",
+    "target": "NSIS",
+    "nsis": {
+      "allowToChangeInstallationDirectory" : true,
+      "oneClick": false
+    },
+    "directories": {"output": "build"}
+  }
+}
